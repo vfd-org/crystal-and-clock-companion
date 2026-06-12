@@ -67,4 +67,4 @@ Constants live in `resonance-core.js`. **Forbidden:** any constant tuned to make
 
 ## 7. Provenance
 
-Reference implementation + this guide: companion repo `web/`. Ground truth: `scripts/sm_ledger.py`, `docs/resonance-mechanism.md`, `docs/shell-rule-wo.md`, Papers LIII–LVIII. Licence: site usage falls under the repository's LICENSE/NOTICE (CC BY-NC 4.0 for content, PolyForm NC for code; trademarks reserved).
+Reference implementation + this guide: companion repo `web/`. Ground truth: **Paper LIX (the citable underpinning of this explorer)**, `scripts/sm_ledger.py`, `docs/resonance-mechanism.md`, `docs/shell-rule-wo.md`, Papers LIII–LVIII. Licence: site usage falls under the repository's LICENSE/NOTICE (CC BY-NC 4.0 for content, PolyForm NC for code; trademarks reserved).

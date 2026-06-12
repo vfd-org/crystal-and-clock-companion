@@ -1,6 +1,6 @@
 # The Crystal and the Clock — Companion Mathematics
 
-**The complete mathematical record behind the book *The Crystal and the Clock*: seven papers, eleven derivation documents, thirteen verification suites (230+ itemised checks, every one with a falsifiable null), and the hostile referee reports each paper was hardened against.**
+**The complete mathematical record behind the book *The Crystal and the Clock*: eight papers, twelve derivation documents, thirteen verification suites (230+ itemised checks, every one with a falsifiable null), and the hostile referee reports each paper was hardened against.**
 
 This repository is standalone: every paper can be read without the book, every claim can be checked without trusting anyone. The book is the plain-language telling; this is the maths it tells.
 
@@ -49,6 +49,7 @@ Read in book order; each is standalone with its own verification pointers.
 | **LVII** | Residual Closure of the Gravity Chain | 9, 12 | [`papers/paper-lvii/paper-lvii.pdf`](papers/paper-lvii/paper-lvii.pdf) |
 | **LVI** | The Gauge-Group Inventory from the Two Arenas | 9 | [`papers/paper-lvi/paper-lvi.pdf`](papers/paper-lvi/paper-lvi.pdf) |
 | **LVIII** | Chirality and Charge Quantization from the Two Arenas | 9, 12 | [`papers/paper-lviii/paper-lviii.pdf`](papers/paper-lviii/paper-lviii.pdf) |
+| **LIX** | The Resonance Chain: from the Crystal's Ring to Atoms (the mass ladder, its placements, the deviation decomposition, the fenced selection problem) — the paper underpinning the simulators | 8, 9, 12 | [`papers/paper-lix/paper-lix.pdf`](papers/paper-lix/paper-lix.pdf) |
 | **XL** | Continuum Targets and Conditional Reductions for D₄ and the GR Limit (the open geometric programme) | 9, 12 | [`papers/paper-xl/paper-xl.pdf`](papers/paper-xl/paper-xl.pdf) |
 
 The full chapter → paper → derivation → verification routing table is [`docs/book-companion-map.md`](docs/book-companion-map.md). The graded claim table (THEOREM / DERIVED-EFF / CONDITIONAL / WITNESSED / TIE / OPEN, with falsifiers) is [`docs/claim-status-ledger.md`](docs/claim-status-ledger.md).
