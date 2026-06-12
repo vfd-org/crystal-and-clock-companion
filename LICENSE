@@ -1,0 +1,188 @@
+================================================================================
+                          RELEASE PRINCIPLE
+================================================================================
+
+  Commons of knowledge. Stewardship of power.
+
+  Open to verify. Open to learn. Open to challenge.
+  Permissioned to commercialise, package, weaponise, brand, or scale.
+
+  The legal licences below are the LEGAL FLOOR of this release, not its
+  philosophical statement. They use "non-commercial" as a blunt proxy
+  because licences cannot enforce nuance. The full release principle and
+  the stewardship frame are in NOTICE, and must be read alongside this
+  LICENSE.
+
+  The core mathematical claims and the reproducibility path are released
+  for independent review, reproduction, criticism, teaching, and
+  non-commercial research use. The applied implementation layer is
+  stewarded: commercial use, packaged simulators, derivative product
+  systems, hosted services, proprietary integrations, mass-scale
+  distribution, branded packaging, and other high-impact use require
+  written permission from the author. See NOTICE §2 for the full
+  permission-pathway list.
+
+================================================================================
+                          DUAL LICENSE SUMMARY
+================================================================================
+
+This is a SOURCE-AVAILABLE release, not an OSI-defined "open source" release.
+Both components below restrict commercial use as their legal mechanism. The
+NOTICE file contains the authoritative release principle, stewardship frame,
+prior-art declaration, trademark notice, and cascade-programme context that
+MUST be read in conjunction with this LICENSE.
+
+  +--------------------------------------+--------------------------------+
+  | Component                            | Licence                        |
+  +--------------------------------------+--------------------------------+
+  | papers/** (tex, bib, pdf)            | CC BY-NC 4.0                   |
+  | docs/** (derivations, ledgers)       | CC BY-NC 4.0                   |
+  | reviews/** (referee reports)         | CC BY-NC 4.0                   |
+  | README.md                            | CC BY-NC 4.0                   |
+  | README.md                            | CC BY-NC 4.0                   |
+  | CHANGELOG.md                         | CC BY-NC 4.0                   |
+  +--------------------------------------+--------------------------------+
+  | scripts/** (verification suites)     | PolyForm Noncommercial 1.0.0   |
+  | scripts/600cell_data.npz             | PolyForm Noncommercial 1.0.0   |
+  | run_all_verifications.sh             | PolyForm Noncommercial 1.0.0   |
+  +--------------------------------------+--------------------------------+
+  | NOTICE                               | Public — must be preserved     |
+  | LICENSE                              | Public — must be preserved     |
+  | CITATION.cff                         | Public — must be preserved     |
+  +--------------------------------------+--------------------------------+
+
+Trademarks ("Vibrational Field Dynamics", "VFD", "Cascade Framework" in
+the VFD context, "VFD Cascade Programme", "VFD-org", "@vfd_org") are
+NOT licensed under either CC BY-NC 4.0 or PolyForm Noncommercial. See
+NOTICE for trademark notice.
+
+================================================================================
+CC BY-NC 4.0 — applies to paper artefacts and documentation
+================================================================================
+
+Copyright (c) 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
+
+The paper sources (hypersphere-universe.tex, hypersphere-universe.pdf,
+references.bib, SCOPE.md), the README.md, and the CHANGELOG.md are
+licensed under the Creative Commons Attribution-NonCommercial 4.0
+International License (CC BY-NC 4.0):
+
+    https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to
+    the licence, and indicate if changes were made.
+  - NonCommercial — You may NOT use the material for commercial purposes.
+  - No additional restrictions — You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the licence permits.
+
+What "NonCommercial" means: not primarily intended for or directed
+towards commercial advantage or monetary compensation. Academic research,
+peer review, teaching, criticism, citation, and personal study are
+permitted. Commercial use, including incorporation into commercial
+products, paid hosted services, packaged simulators, derivative
+proprietary frameworks, or paywalled materials, is NOT permitted under
+this licence and requires separate written permission.
+
+For commercial licensing inquiries, contact:
+    contact@vibrationalfielddynamics.org
+
+================================================================================
+POLYFORM NONCOMMERCIAL 1.0.0 — applies to verify/ directory contents
+================================================================================
+
+Copyright (c) 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
+
+The verification scripts (verify/verify_paper.py, verify/README.md,
+verify/requirements.txt) are licensed under the PolyForm Noncommercial
+License 1.0.0:
+
+    https://polyformproject.org/licenses/noncommercial/1.0.0/
+
+This is a SOURCE-AVAILABLE licence, not an OSI-defined open-source
+licence. It grants you the right to use, modify, distribute, and run
+the software for ANY noncommercial purpose, with reciprocity terms
+described in the licence text.
+
+Permitted uses include:
+  - Personal study and research
+  - Academic peer review
+  - Reproduction of paper claims (the primary intended use)
+  - Teaching and educational settings
+  - Independent verification of the cascade Lambda-derivation
+  - Non-commercial derivative work with attribution
+
+Restricted uses (require separate written permission):
+  - Commercial product integration
+  - Paid hosted services or SaaS offerings
+  - Sale or resale (alone or as part of a commercial product)
+  - Incorporation into proprietary commercial frameworks
+  - Use in or for the benefit of a commercial enterprise
+
+The full PolyForm Noncommercial 1.0.0 licence text is at the URL above
+and is incorporated by reference into this LICENSE file.
+
+For commercial licensing inquiries, contact:
+    contact@vibrationalfielddynamics.org
+
+================================================================================
+DEFINITIONS
+================================================================================
+
+"Commercial use" means any use that is primarily intended for or
+directed toward commercial advantage or monetary compensation, including
+but not limited to: incorporating this work into a paid product,
+offering it as part of a paid service, using it to generate revenue
+directly or indirectly, or distributing it to clients of a commercial
+enterprise.
+
+"Verification use" means using verify/verify_paper.py to reproduce the
+numerical claims of the paper, study the cascade derivation, or evaluate
+the framework's reproducibility. This is the primary intended use and is
+permitted under PolyForm Noncommercial 1.0.0 without additional permission.
+
+"Research and educational use" means use by academics, students,
+independent researchers, or science communicators for the purpose of
+learning, teaching, criticism, or non-commercial publication. This is
+permitted under both CC BY-NC 4.0 (paper) and PolyForm Noncommercial
+1.0.0 (sim code) without additional permission.
+
+================================================================================
+ATTRIBUTION REQUIREMENT
+================================================================================
+
+Required citation format (see CITATION.cff for tooling):
+
+  Smart, Lee. "Hyperspherical Closure Cosmology: A phi-Cascade
+  Derivation of Lambda, and a Bridge to Closed FLRW, LambdaCDM,
+  Dodecahedral Topology, and Conformal Cyclic Cosmology." Institute
+  of Vibrational Field Dynamics, 2026.
+  https://github.com/vfd-org/hypersphere-cosmology
+
+For derivative academic work, attribution to both this synthesis paper
+AND the underlying cascade-programme papers is encouraged where the
+underlying results are used (Paper V, XXII, XXXII, XXXVI; see NOTICE).
+
+================================================================================
+COMMERCIAL LICENSING
+================================================================================
+
+Commercial use of any part of this work — paper, derivation, methodology,
+verification scripts, or any derivative thereof — requires a separate
+written commercial licence from the author. Commercial licences may be
+granted on a case-by-case basis.
+
+Inquiries:
+    Lee Smart
+    Institute of Vibrational Field Dynamics
+    contact@vibrationalfielddynamics.org
+    @vfd_org
+
+================================================================================
+                              END OF LICENSE
+================================================================================

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Crystal and the Clock — Companion Mathematics"
+authors:
+  - family-names: Smart
+    given-names: Lee
+    affiliation: "Institute of Vibrational Field Dynamics"
+year: 2026
+url: "https://github.com/vfd-org/crystal-and-clock-companion"
+notes: >
+  Companion papers (XL, LIII-LVII), derivation documents, verification
+  suites (205+ checks), and referee reports for the book
+  "The Crystal and the Clock". Preprints, not peer-reviewed; the
+  machine-referee reports in reviews/ are part of the record.
