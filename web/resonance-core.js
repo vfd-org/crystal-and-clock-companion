@@ -63,11 +63,38 @@
     ["Higgs", 125.25, 81, "boson", "PLACED"],
   ];
   function rungMass(N) { return M_P * Math.pow(PHI, -N); }
+  /* deviation decomposition (WO-SHELL-OFFSET-001 SR6, SR9, SR10):
+     each particle's miss attributed to its dominant, recorded cause */
+  const CATEGORY = {
+    muon: ["ANCHOR", "the one structural rung (96 = 24\u00d74); the ladder's anchor"],
+    Z: ["PLACEMENT", "sharp placement: \u22122.3%"],
+    W: ["MIXING", "= Z's rung + the Weinberg angle (named open): not an independent miss; sin\u00b2\u03b8_W = 0.2231 vs PDG 0.2233"],
+    up: ["SCHEME", "compared against an MS-bar bookkeeping number, not a physical pitch"],
+    down: ["SCHEME", "compared against an MS-bar bookkeeping number, not a physical pitch"],
+    strange: ["SCHEME", "compared against an MS-bar bookkeeping number, not a physical pitch"],
+    charm: ["SCHEME", "compared against an MS-bar bookkeeping number, not a physical pitch"],
+    bottom: ["SCHEME", "compared against an MS-bar bookkeeping number, not a physical pitch"],
+    proton: ["BINDING", "~99% QCD binding energy; not the bare ladder's to sound"],
+    electron: ["DRESSING", "the genuine open layer: interaction self-energy on a bare note"],
+    tau: ["DRESSING", "the genuine open layer: interaction self-energy on a bare note"],
+    top: ["DRESSING", "the genuine open layer: interaction self-energy on a bare note"],
+    Higgs: ["DRESSING", "the genuine open layer: interaction self-energy on a bare note"],
+  };
+  const DECOMPOSITION_FACTS = [
+    { id: "SR9", title: "not finer rungs",
+      text: "sub-rung positions are chance-like at half- and quarter-shell grids (p = 0.32, 0.40): the missing layer is not more geometry of the same kind" },
+    { id: "SR10", title: "the W is the Z plus the mixing",
+      text: "W\u2013Z shell split 0.262 = log_\u03c6(1/cos \u03b8_W); the EW sector has one placement (Z) + one named open (the mixing) + the Higgs" },
+    { id: "SR6", title: "the gradient",
+      text: "mean |offset|: leptons 0.071 < EW bosons 0.184 < quarks 0.288 < composite 0.462 \u2014 sharpest where mass is physical, worst where it is bookkeeping" },
+  ];
   function ladder() {
     return PARTICLES.map(([name, mPDG, N, sector, grade]) => {
       const mPred = rungMass(N);
+      const cat = CATEGORY[name] || ["", ""];
       return {
         name, sector, grade,
+        category: cat[0], reading: cat[1],
         shell: N,
         shellReal: Math.log(M_P / mPDG) / LNPHI,   // true position
         offset: Math.log(M_P / mPDG) / LNPHI - N,  // distance from rung
@@ -132,7 +159,7 @@
     };
   }
 
-  return { PHI, M_MU, N_MU, M_P, ALPHA, ALPHA_INV,
+  return { PHI, M_MU, N_MU, M_P, ALPHA, ALPHA_INV, DECOMPOSITION_FACTS,
            spectrum, ladder, rungMass, hydrogen, constants,
            LINK4, STRUCTURAL, PARTICLES };
 });

@@ -16,6 +16,8 @@ The narrative spine — each section is one link of the chain, and the page must
 2. **Mass = closure frequency (DERIVED).** A particle is a standing wave that closes on itself; the rest frequency is the mass. *Interaction: the standing-wave animation re-paces when a particle is selected.*
 3. **The golden ladder (DERIVED).** One golden-ratio step per refinement level: m = m_P·φ^(−N), anchored only on the muon's structural shell 96 = 24×4. Every rung value is parameter-free. Data: `ResonanceCore.ladder()`.
 4. **Which rung — OPEN.** The integer selection is the genuinely open item, fenced by proofs and nulls. Render `ResonanceCore.LINK4` as a visually distinct "open" block. This section is **required** — do not omit it.
+4½. **Where the misses come from (ATTRIBUTED).** The deviations decompose into four recorded causes — render the per-particle attribution rows (offset bar coloured by category) plus the three fact cards. Categories and per-particle readings: `ResonanceCore.ladder()[i].category / .reading`; fact cards: `ResonanceCore.DECOMPOSITION_FACTS`. Categories: ANCHOR (muon), PLACEMENT (Z), MIXING (W = Z + Weinberg angle, a named open — not an independent miss), SCHEME (u, d, s, c, b — MS-bar bookkeeping numbers), BINDING (proton, ~99% QCD glue), DRESSING (e, τ, t, H — the genuine open interaction layer). *This section is required: it is the honest answer to "why are most deviations large?".*
+
 5. **Atoms (THEOREM).** With mass + charge + Schrödinger + Coulomb all derived, hydrogen is a theorem. The page computes the hydrogen spectrum live from the framework's own electron and shows that the error is *exactly* the electron's mass-input error. *Interaction: toggle framework-mₑ / measured-mₑ.* Data: `ResonanceCore.hydrogen(bool)`.
 
 The one-line takeaway the page should leave: **the mechanism is derived end-to-end; exactly one link (rung selection) is open, and the site says so.**
@@ -40,7 +42,7 @@ Constants live in `resonance-core.js`. **Forbidden:** any constant tuned to make
 2. The ladder draws particles at their **true** N_real positions, with the offset to the nearest rung visibly rendered (the muon on the line, the down-quark mid-air *is the content*).
 3. The Link-4 open block links to the public record: `docs/shell-rule-wo.md` in the companion repo.
 4. Footer must include the verify-it-yourself line: repo URL + `bash run_all_verifications.sh` (thirteen suites, 228+ checks).
-5. QA before publish: the page's numbers must match `python3 scripts/sm_ledger.py` exactly (same repo). Spot-check at minimum: muon dev +0.0%, Z −2.3%, down +26.1%, E₁(placed mₑ) = −14.136 eV, E₁(measured) = −13.606 eV, α⁻¹ = 137.0361103.
+5. QA before publish: the page's numbers must match `python3 scripts/sm_ledger.py` exactly (same repo). Spot-check at minimum: muon dev +0.0%, Z −2.3%, down +26.1%, E₁(placed mₑ) = −14.136 eV, E₁(measured) = −13.606 eV, α⁻¹ = 137.0361103, W–Z shell split 0.262 with sin²θ_W = 0.2231, SR9 p-values 0.32/0.40.
 
 ## 4. Design tokens (reference implementation)
 
@@ -60,6 +62,7 @@ Constants live in `resonance-core.js`. **Forbidden:** any constant tuned to make
 
 - Ladder: *"Anchored on a single rung — the muon at 96 = 24×4 — every other rung value is a parameter-free number. The dots sit at their true measured positions: distance from a rung is the framework's real, unfitted error."*
 - Link 4: *"The rule that selects each particle's rung is the open problem. It is provably not a function of the particle's quantum numbers, eight geometric sieves test null, and it behaves like an interacting standing-wave condition — blocked behind the coupling sector. The record, including every null, is public."*
+- Decomposition: *"The misses are not one mystery. The W's whole miss is the Z's small one plus the weak mixing angle — an unknown already on the list, so two misses are really one. The light quarks are compared against bookkeeping conventions, the proton is mostly binding glue, and the clean remainder — smallest for the cleanest particles — is the open interaction layer: the dressing a bare note acquires from the forces it feels."*
 - Atoms: *"With the framework's own electron, every hydrogen level is off by exactly the electron's +3.9% shell offset and nothing else. Swap in the measured electron and the spectrum is exact: the atomic physics is a theorem; only the mass input is open."*
 
 ## 7. Provenance
