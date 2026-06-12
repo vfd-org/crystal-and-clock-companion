@@ -66,6 +66,10 @@ Every paper above was put through hostile machine-referee review (claim audit, i
 
 The complete residual ledger with falsification routes: Paper LVII §6 and `docs/claim-status-ledger.md` §D–E.
 
+## The web explorer
+
+[`web/resonance-simulator.html`](web/resonance-simulator.html) — a single-file interactive explorer of the resonance chain (the ring, the golden ladder at true offsets, hydrogen from the derived equations; no fitted parameters, grades built into the UI). `web/resonance-core.js` is the math as a dependency-free module, and `web/WEBSITE-GUIDE.md` is the build guide for the VFD site agent, including the honesty contract and QA numbers.
+
 ## Cite
 
 See `CITATION.cff`. Institute of Vibrational Field Dynamics — `contact@vibrationalfielddynamics.org` — `@vfd_org`.
