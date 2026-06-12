@@ -17,7 +17,7 @@ cd crystal-and-clock-companion
 bash run_all_verifications.sh        # ~10 minutes; needs Python 3 + NumPy (SciPy/SymPy for two suites)
 ```
 
-Expected output: ten suites, **every line `… PASS, 0 FAIL`**. Any other result falsifies the claim that the failing check carries — and we ask to be told about it.
+Expected output: eleven suites, **every line `… PASS, 0 FAIL`**. Any other result falsifies the claim that the failing check carries — and we ask to be told about it.
 
 | Suite | Checks | Carries |
 |---|---|---|
@@ -29,6 +29,7 @@ Expected output: ten suites, **every line `… PASS, 0 FAIL`**. Any other result
 | `verify_gap_strengthening.py` | 22 | hardened re-tests with genuine nulls |
 | `verify_gr_closure.py` | 39 | the gravity chain: Fierz–Pauli uniqueness, trace reversal, light bending ×2, equivalence principle, Maxwell |
 | `verify_residual_closure.py` | 24 | bootstrap in-house; non-Gaussian effective action; explicit-rate continuum control; conditional G; gauge-group structure |
+| `verify_sm_structure.py` | 12 | chirality is structural (the internal factor is the left/chiral Spin(4) factor); charge-magnitude lattice in thirds with the {1,3,3,1} lepton/quark pattern |
 | `verify_boundary_green_function.py` | witness | Newtonian 1/r from the boundary response |
 | `verify_lemma_2p5_boundary_connectivity.py` | witness | boundary graph structure |
 
