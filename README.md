@@ -1,6 +1,6 @@
 # The Crystal and the Clock — Companion Mathematics
 
-**The complete mathematical record behind the book *The Crystal and the Clock*: six papers, eleven derivation documents, ten verification suites (205+ itemised checks, every one with a falsifiable null), and the hostile referee reports each paper was hardened against.**
+**The complete mathematical record behind the book *The Crystal and the Clock*: seven papers, eleven derivation documents, eleven verification suites (217+ itemised checks, every one with a falsifiable null), and the hostile referee reports each paper was hardened against.**
 
 This repository is standalone: every paper can be read without the book, every claim can be checked without trusting anyone. The book is the plain-language telling; this is the maths it tells.
 
@@ -45,6 +45,7 @@ Read in book order; each is standalone with its own verification pointers.
 | **LIII** | Einstein's Equations from Substrate Closure | 9 | [`papers/paper-liii/paper-liii.pdf`](papers/paper-liii/paper-liii.pdf) |
 | **LVII** | Residual Closure of the Gravity Chain | 9, 12 | [`papers/paper-lvii/paper-lvii.pdf`](papers/paper-lvii/paper-lvii.pdf) |
 | **LVI** | The Gauge-Group Inventory from the Two Arenas | 9 | [`papers/paper-lvi/paper-lvi.pdf`](papers/paper-lvi/paper-lvi.pdf) |
+| **LVIII** | Chirality and Charge Quantization from the Two Arenas | 9, 12 | [`papers/paper-lviii/paper-lviii.pdf`](papers/paper-lviii/paper-lviii.pdf) |
 | **XL** | Continuum Targets and Conditional Reductions for D₄ and the GR Limit (the open geometric programme) | 9, 12 | [`papers/paper-xl/paper-xl.pdf`](papers/paper-xl/paper-xl.pdf) |
 
 The full chapter → paper → derivation → verification routing table is [`docs/book-companion-map.md`](docs/book-companion-map.md). The graded claim table (THEOREM / DERIVED-EFF / CONDITIONAL / WITNESSED / TIE / OPEN, with falsifiers) is [`docs/claim-status-ledger.md`](docs/claim-status-ledger.md).
@@ -56,7 +57,7 @@ Every paper above was put through hostile machine-referee review (claim audit, i
 ## What is open, stated plainly
 
 - The Gromov–Hausdorff continuum statement about the arena geometry (Paper XL's programme).
-- The Standard Model's wiring: the independent hypercharge factor, chirality, representations, couplings, heavy shell integers.
+- The Standard Model's wiring, after Paper LVIII's closures (chirality and the charge lattice are now structural): the independent hypercharge factor and Weinberg angle, doublet/anomaly assignments, couplings, the shell integers and offsets behind all precise masses, the neutrino sector, and the three-generation count (named D4-triality conjecture). The parameter-free ledger `python3 scripts/sm_ledger.py` prints exactly what is determined today, with grades.
 - The universal selection law, and the question of experience — named, not claimed.
 - Newton's constant is *conditionally anchored* (to 1.9 parts in 10⁴) on a named, open hypothesis (H-shell-96).
 
