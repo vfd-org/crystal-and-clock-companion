@@ -3,7 +3,7 @@
 # Requires: Python 3 + NumPy (SciPy and SymPy for verify_residual_closure).
 set -uo pipefail
 cd "$(dirname "$0")"
-suites=(explore_geometric_ladder explore_shell_rule verify_sm_structure verify_crystal_forcing verify_rendering_layer verify_rung_dimension_ladder \
+suites=(explore_offset_rationals explore_geometric_ladder explore_shell_rule verify_sm_structure verify_crystal_forcing verify_rendering_layer verify_rung_dimension_ladder \
         verify_ladder_completion verify_narrative_closure verify_gap_strengthening \
         verify_gr_closure verify_residual_closure)
 fail=0
