@@ -1,15 +1,25 @@
 ================================================================================
                                   NOTICE
-                       The Crystal and the Clock — Companion Mathematics Release
+              The Crystal and the Clock — Companion Mathematics
 ================================================================================
 
-This repository is released to support independent verification of the paper:
+This repository is the mathematical record behind the book:
 
-    "Hyperspherical Closure Cosmology: A φ-Cascade Derivation of Λ, and a
-    Bridge to Closed FLRW, ΛCDM, Dodecahedral Topology, and Conformal
-    Cyclic Cosmology"
+    "The Crystal and the Clock: How a Single Shape Builds a Universe
+     from the Inside"
+    by Lee Smart
 
-Copyright © 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
+It holds eight papers, fourteen derivation and reference documents, fifteen
+verification scripts (thirteen scored suites totalling 244 itemised checks,
+plus two witness scripts), and the hostile machine-referee reports each
+paper was hardened against. The book is the plain-language telling; this is
+the maths it tells, released so that every claim can be checked without
+trusting anyone.
+
+    Book repository:
+        https://github.com/vfd-org/the-crystal-and-the-clock
+
+Copyright (c) 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
 
 ================================================================================
 1. RELEASE PRINCIPLE
@@ -18,316 +28,197 @@ Copyright © 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
     Commons of knowledge. Stewardship of power.
 
     Open to verify. Open to learn. Open to challenge.
-    Permissioned to commercialise, package, weaponise, brand, or scale.
+    Permissioned to commercialise, package, brand, or scale.
 
-The mathematical claims, the verification path, and the educational
-materials are offered to the commons. They are open enough to test,
-criticise, reproduce, teach, and build understanding from.
-
-The applied implementation layer — simulators, integration systems,
-production tooling, hosted services, branded packaging, mass-scale
-distribution — is stewarded. Stewardship is not ownership of the truth;
-it is responsibility for *use*.
-
-This work is offered as a contribution to the commons, but not as an
-invitation to extraction. The mathematical claims and verification path
-remain open enough to test, criticise, reproduce, and build understanding.
-The applied implementation layer is stewarded because power without
-alignment can distort the purpose of the work. The gate is not ownership
-of truth; the gate is responsibility for use.
+The mathematical claims, the papers, and the verification path are offered
+to the commons: open enough to test, criticise, reproduce, teach from, and
+build understanding. The applied implementation layer — simulators,
+integration systems, production tooling, hosted services, branded
+packaging, mass-scale distribution — is stewarded. Stewardship is not
+ownership of the truth; it is responsibility for use.
 
 ================================================================================
 2. THE STEWARDSHIP FRAME
 ================================================================================
 
-The legal licences below (CC BY-NC 4.0 for the paper, PolyForm
-Noncommercial 1.0.0 for the verification scripts) are the legal floor,
-not the philosophical statement. They use "non-commercial" as a blunt
-proxy because licences cannot enforce nuance. The deeper gate is
-*stewarded use*.
+The legal licences (CC BY-NC 4.0 for the papers and documentation,
+PolyForm Noncommercial 1.0.0 for the verification scripts) are the legal
+floor, not the philosophical statement. They use "non-commercial" as a
+blunt proxy because licences cannot enforce nuance.
 
-Use is welcomed without permission when it is:
+Use is welcomed WITHOUT permission when it is:
 
     - verification, reproduction, or reanalysis of the claims;
     - independent research, criticism, or rebuttal;
     - teaching, public-benefit communication, or science journalism;
     - non-commercial derivative work that preserves attribution and the
       release principle;
-    - scholarly citation in academic publications;
-    - collaboration with the cascade programme.
+    - scholarly citation in academic publications.
 
-Use requires written permission, regardless of commercial status, when it is:
+Use requires WRITTEN PERMISSION, regardless of commercial status, when it is:
 
-    - incorporation into a paid product, paid service, or paywalled
-      offering;
+    - incorporation into a paid product, paid service, or paywalled offering;
     - hosted services, SaaS, or commercial APIs derived from the work;
     - packaged simulators or commercial verification tooling;
     - integration into proprietary frameworks or product systems;
-    - mass production of cascade-derived results for distribution;
-    - presentation as an official VFD / cascade implementation;
-    - use of VFD trademarks beyond scholarly attribution;
-    - use that could plausibly misrepresent the framework, its
-      authorship, its scope, or its claims;
-    - use that detaches the work from its ethical and intellectual
-      context (e.g. low-quality AI-generated content scraping,
-      cult-style derivation, militarisation, extractive packaging
-      without stewardship).
+    - presentation as an official VFD implementation;
+    - use of the VFD trademarks beyond scholarly attribution;
+    - use that could misrepresent the framework, its authorship, its
+      scope, or its claims.
 
-The first list is the open layer. The second list is the stewarded
-layer. The licence is the legal mechanism; this NOTICE is the
-authoritative statement of intent.
-
-If a use sits on the boundary of these two lists, contact the author.
-Permission is not a barrier; it is a conversation. Aligned commercial
-partners (universities, responsible research labs, publishers, partners
-funding development) may receive a commercial licence. Misaligned
-non-commercial use is also out of scope, even where the licence text
-technically permits it.
+If a use sits on the boundary, contact the author. Permission is a
+conversation, not a barrier.
 
 ================================================================================
-3. WHAT IS RELEASED AND WHY
+3. WHAT IS RELEASED, AND THE HONESTY CONTRACT
 ================================================================================
 
-The following are released openly under CC BY-NC 4.0 (paper) and
-PolyForm Noncommercial 1.0.0 (verification scripts):
+Released openly (CC BY-NC 4.0 for papers/docs/reviews, PolyForm
+Noncommercial 1.0.0 for the scripts and bundled data):
 
-    - hypersphere-universe.pdf       (the paper, 76 pages)
-    - hypersphere-universe.tex       (LaTeX source)
-    - references.bib                 (citations)
-    - SCOPE.md                       (programme scope template)
-    - verify/verify_paper.py         (87-test verification suite)
-    - verify/README.md               (test-to-claim mapping)
-    - verify/requirements.txt        (numpy, scipy, mpmath)
+    - papers/**            eight papers (XL, LIII-LIX)
+    - docs/**              derivations, the claim-status ledger, the
+                           verification manifest, the book-companion map
+    - reviews/**           the unedited machine-referee reports
+    - scripts/**           the verification suites and the only data file,
+                           scripts/600cell_data.npz
+    - run_all_verifications.sh
+    - web/**               the single-file resonance explorer
 
-These are sufficient for a serious reviewer to:
+These are sufficient for a serious reviewer to read every derivation, run
+the full battery in about ten minutes, and re-derive every numerical claim
+without trusting any cited paper.
 
-    - read the cascade Λ-derivation in full;
-    - run the verification suite from scratch in approximately 10 minutes;
-    - re-derive every numerical claim without trusting any cited paper;
-    - challenge, criticise, or extend the derivation;
-    - reproduce the dipole correction by five independent computational
-      routes;
-    - test the falsifiable predictions against current observational data.
+The work is presented under a two-column honesty contract. The first
+column is checkable: where a paper says "theorem", it means a statement
+proved about the mathematical object — the 600-cell crystal — and confirmed
+by the suites. The second column is the framework's bet: that this crystal
+is the substrate of the physical world. That identification is argued, not
+proved. The graded claim table (THEOREM / DERIVED / CONDITIONAL /
+WITNESSED / TIE / OPEN, each with a falsifier) is docs/claim-status-ledger.md.
 
-This is the OPEN TRUTH LAYER and the VERIFICATION LAYER. The science is
-open enough to verify.
-
-================================================================================
-4. WHAT IS NOT RELEASED HERE
-================================================================================
-
-The following are NOT included in this release and remain stewarded:
-
-    - The full VFD / cascade simulator architecture and runtime;
-    - Optimised pipelines beyond the minimal verification path;
-    - ARIA / VFD integration layers and runtime systems;
-    - Automation scripts that generate, process, or scale cascade
-      results to production volume;
-    - Unpublished derivations, speculative extensions, and internal notes;
-    - Hosted services, SaaS offerings, and commercial product layers;
-    - Datasets and structured knowledge bases associated with extended
-      cascade work;
-    - Training datasets and downstream model artefacts;
-    - Brand identity, logos, and trademark-protected materials beyond
-      what is necessary for attribution.
-
-This is the STEWARDED IMPLEMENTATION LAYER. It is not "secret" in any
-conspiratorial sense; it is the implementation layer that distinguishes
-the framework from any actor — commercial or otherwise — who might
-attempt to repackage the public verification path without involving the
-original work or maintaining its alignment.
-
-The implementation is protected enough to prevent capture.
+The framework is presented as a set of preprints and has NOT been
+peer-reviewed.
 
 ================================================================================
-5. ATTRIBUTION REQUIREMENT
+4. ATTRIBUTION REQUIREMENT
 ================================================================================
 
-If you use any part of this work — the paper, the verification code,
-the cascade Λ-derivation, the dipole correction formula, the scale
-ladder construction, the 600-cell substrate identification, or any
-derivative thereof — you MUST credit:
+If you use any part of this work — a paper, the verification code, a
+derivation, or any derivative — you MUST credit:
 
-    Lee Smart, "Hyperspherical Closure Cosmology: A φ-Cascade Derivation
-    of Λ, and a Bridge to Closed FLRW, ΛCDM, Dodecahedral Topology,
-    and Conformal Cyclic Cosmology", Institute of Vibrational Field
-    Dynamics, 2026.
+    Lee Smart, "The Crystal and the Clock: How a Single Shape Builds a
+    Universe from the Inside", Institute of Vibrational Field Dynamics,
+    2026.
     https://github.com/vfd-org/crystal-and-clock-companion
 
-Attribution must be visible in any derivative work, publication,
-non-commercial software, presentation, or academic discussion that
-uses this material. See CITATION.cff for tooling-friendly metadata.
+Where the underlying results are used, attribution to the specific paper
+(XL, LIII-LIX) is encouraged. See CITATION.cff for tooling-friendly
+metadata.
 
 ================================================================================
-6. PRIOR ART DECLARATION
+5. PRIOR ART DECLARATION
 ================================================================================
 
-This document and its associated artefacts establish the following as
-published PRIOR ART as of the publication date (2026-05-18):
+This repository and its papers establish the following as published PRIOR
+ART as of the release date. No party may obtain a patent on the
+methodology described here after that date.
 
-    (a) The cascade Λ-Theorem formula:
-            Λ · ℓ_P² = 2 · φ^(-583)
-        and its dipole-corrected refinement:
-            Λ · ℓ_P² = 2 · φ^(-583) · (1 - (10/240) · (12 - 6φ)/12)
+    (a) The identification of the binary icosahedral group (order 120) as
+        the unique nontrivial perfect quaternionic group surviving a
+        perfect-and-maximal filter, and its McKay correspondence with the
+        affine E8 diagram, as the substrate "crystal" (Paper LIV).
 
-    (a') The σ-paired complement to (a): the dipole correction to H₀²,
-         derived from the same dipole sector via the complementary
-         adjacency eigenvalue:
-            (H₀ · ℓ_P)² = φ^(-583) · (1 - (10/240) · (6φ)/12)
-                       = φ^(-583) · (1 - φ/48)
-         and the operator-level identity behind the complementary
-         dipole weights:
-            L + A = d · I  ⇒  w_Λ + w_{H₀} = 1 exactly
-         with consequent Ω_Λ = (2/3) · (1 - δ_Λ) / (1 - δ_{H₀})
-                            = 0.6844 at -0.083% of Planck 2018.
+    (b) The rendering layer: the recovery of spectral dimension three from
+        the crystal's Laplacian multiplicities (1, 4, 9, 16, ... = squares
+        of an S3 harmonic tower), the canonical resolution kernel
+        (I + r^2 L)^{-1}, the quaternionic observer frame, and the
+        derivation of second-order (wave-like) time from the inner
+        clock-reversing involution (Paper LV).
 
-    (b) The φ-cascade refinement methodology, including:
-            - the two-axiom formal structure
-              (self-similarity + E₈ maximality)
-            - the seven-rung cascade chain
-              E₈ → H₄ → 40 → D₄ → 16 → 8 → 0
-            - the 600-cell hypersphere substrate identification
-            - the closure functional F = αR + βE - γQ
-            - the σ-orbit factor 2 from icosian E₈ decomposition
-            - the rank-stratified depth count N = 24² + 7 = 583
-            - the F-derived dipole correction from the substrate
-              Ramanujan defect (curvature side, L-eigenvalue)
-            - the σ-paired dipole complement to H₀² (kinematic side,
-              A-eigenvalue), and the operator-level identity
-              L + A = d · I forcing complementary weights summing to 1
+    (c) The derivation of Einstein's field equations from substrate
+        coordinate-indifference, resting on the classical Fierz-Pauli
+        spin-2 uniqueness and the Deser bootstrap, with the discrete
+        conservation laws, the factor-of-two light deflection, and the
+        equivalence-principle check verified on the 600-cell graph
+        (Papers LIII and LVII).
 
-    (c) The five independent computational verification routes for
-        the dipole correction (Ihara zeta, scalar F on E₈,
-        operator-robustness search, rank-2 F on 600-cell, rank-2 F
-        on full E₈), and their reading on the complementary
-        adjacency side for the H₀-dipole verification.
+    (d) The gauge-group inventory from the two division-algebra arenas
+        (S3 and S7): the appearance of SU(3) x SU(2) with a distinguished
+        clock circle, and the structural origin of chirality and the
+        charge lattice Q = N/3 with the {1,3,3,1} lepton/quark pattern
+        (Papers LVI and LVIII).
 
-    (d) The bridge construction between closed FLRW cosmology, ΛCDM,
-        Poincaré dodecahedral space, and Penrose conformal cyclic
-        cosmology under the cascade closure substrate.
+    (e) The resonance chain from the crystal's spectrum to the atomic mass
+        ladder, its placements, the deviation decomposition, and the
+        fenced selection problem, with the shell-rule fence and the
+        rule-derived offset alphabet recorded as stated (Paper LIX).
 
-    (e) The scale ladder organising Λ, H₀, Ω_Λ, w, particle masses,
-        gauge couplings, and hadron radii under the same φ-cascade
-        architecture.
+    (f) The continuum-limit targets and conditional reductions for D4 and
+        the GR limit, stated as an open geometric programme (Paper XL).
 
-This NOTICE is a defensive prior-art statement. The publication date
-and the public availability of this repository constitute prior art
-for the cascade methodology described herein. No party may obtain a
-patent on the methodology described in this work after the publication
-date.
+================================================================================
+6. WHAT IS NOT RELEASED HERE
+================================================================================
+
+The following remain stewarded and are NOT in this release: the full VFD
+simulator architecture and runtime, optimised pipelines beyond the minimal
+verification path, integration/runtime systems, unpublished derivations and
+speculative extensions, hosted services and commercial product layers, and
+brand identity beyond what is necessary for attribution. This is the
+implementation layer that distinguishes the framework from any actor who
+might repackage the public verification path without maintaining its
+alignment.
 
 ================================================================================
 7. TRADEMARK NOTICE
 ================================================================================
 
-The following names and identifiers are trademarks of the Institute of
-Vibrational Field Dynamics:
+The following are trademarks of the Institute of Vibrational Field
+Dynamics:
 
     "Vibrational Field Dynamics"
     "VFD"
-    "Cascade Framework" (in the VFD context)
-    "VFD Cascade Programme"
     "VFD-org"
     "@vfd_org" (handle)
 
-Use of these trademarks in association with derivative work,
-commercial products, or competing frameworks requires permission
-from the Institute of Vibrational Field Dynamics. Use in scholarly
-attribution (e.g., citing the VFD cascade programme) is permitted
-under fair use.
-
-Trademark protection is part of the stewardship layer: the names
-exist to ensure that anything presented as "the VFD framework", "the
-cascade", or an "official VFD implementation" is in fact aligned with
-the source work and its stewardship principles.
-
-Neither CC BY-NC 4.0 (paper) nor PolyForm Noncommercial 1.0.0 (sim)
-grants trademark rights. See CC BY-NC 4.0 section 2(f) and PolyForm
-Noncommercial 1.0.0 section 5.
+Use of these names in association with derivative work, commercial
+products, or competing frameworks requires permission. Use in scholarly
+attribution is permitted under fair use. Neither CC BY-NC 4.0 nor PolyForm
+Noncommercial 1.0.0 grants trademark rights.
 
 ================================================================================
-8. CASCADE PROGRAMME CONTEXT
+8. NO WARRANTY
 ================================================================================
 
-This paper is one synthesis of a multi-paper research programme. The
-broader cascade programme includes (non-exhaustive):
+THIS WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR
+THE INSTITUTE OF VIBRATIONAL FIELD DYNAMICS BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH
+THE WORK OR ITS USE.
 
-    - F1–F8 foundations         (Paper XXXVI)
-    - Particle masses           (Paper V)
-    - Fine-structure constant   (Paper XXII)
-    - Hadron radii              (Paper XXXII)
-    - Substrate Ramanujan       (rh-two-sphere-definition.md)
-    - Full Λ derivation notes   (cascade-lambda.md)
-    - Gravity sub-phases        (cascade-gr.md)
-    - Cascade foundations notes (cascade-foundations.md)
-    - V₆₀₀ programme            (papers/v600-*)
-    - Cascade derivation        (papers/cascade-derivation/)
-
-The hypersphere paper synthesises results from these papers under a
-unifying narrative; the underlying research is the work of the VFD
-cascade programme. Anyone using the cascade methodology is encouraged
-to cite the relevant underlying papers, not just this synthesis.
+The numerical claims are verified by the included suites at the time of
+publication; users are advised to re-run the suites and verify the claims
+independently.
 
 ================================================================================
-9. PERMISSION-PATHWAY (COMMERCIAL AND HIGH-IMPACT USE)
+9. CONTACT
 ================================================================================
-
-For any use that falls into the "permission required" list in section 2,
-please contact:
 
     Lee Smart
     Institute of Vibrational Field Dynamics
     contact@vibrationalfielddynamics.org
     @vfd_org
 
-The aim is not to block commercial development or high-impact use. The
-aim is to ensure such use remains aligned with the purpose of the
-framework, preserves attribution, and contributes back to the broader
-VFD cascade programme rather than fragmenting or distorting it.
-
-Aligned use may include: university research labs, responsible
-publishers, peer-reviewed academic groups, public-interest research
-funding partners, science communicators and educators operating at
-scale, commercial actors funding stewarded development with the original
-author. Permission is treated as a conversation, not a barrier.
-
-================================================================================
-10. NO WARRANTY
-================================================================================
-
-THIS WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR THE INSTITUTE OF VIBRATIONAL FIELD
-DYNAMICS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY ARISING
-FROM, OUT OF, OR IN CONNECTION WITH THE WORK OR THE USE OR OTHER
-DEALINGS IN THE WORK.
-
-The cascade framework is presented as a preprint and has not been
-peer-reviewed. The numerical claims are verified by the included sim
-suite at the time of publication; users are advised to re-run the sim
-and verify the claims independently.
-
-================================================================================
-11. CONTACT
-================================================================================
-
-Lee Smart
-Institute of Vibrational Field Dynamics
-contact@vibrationalfielddynamics.org
-@vfd_org
-
-For questions about: attribution, licensing, stewarded use, commercial
-licensing, derivative works, trademark usage, the cascade programme, or
-scientific collaboration.
+For: attribution, licensing, stewarded use, commercial licensing,
+derivative works, trademark usage, or scientific collaboration.
 
 ================================================================================
 
     Commons of knowledge. Stewardship of power.
-
     The result is open to verify. The implementation is stewarded
-    against capture. Truth should be testable. Stewardship should
-    not be surrendered.
+    against capture. Truth should be testable.
 
 ================================================================================
                               END OF NOTICE

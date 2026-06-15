@@ -35,7 +35,17 @@ python3 scripts/verify_lemma_2p5_boundary_connectivity.py
 | `verify_gr_closure.py` | 39 | the gravity chain: stress tensor, Fierz–Pauli uniqueness, trace reversal/factor 2, light bending ×2, GW, Schrödinger envelope, equivalence principle, Maxwell | Ch9 |
 | `verify_residual_closure.py` | 24 | residual upgrades: in-house bootstrap, beyond-Gaussian effective action, explicit-rate continuum control, conditional G, gauge-group structure (G₂ → su(3) etc.) | Ch9, Ch12 |
 
-Supporting witnesses: `verify_boundary_green_function.py` (discrete 1/r, fit R² = 0.9966), `verify_lemma_2p5_boundary_connectivity.py` (boundary graph 10-regular, connected, λ₂ = 1.77), `verify_hadron_radii.py`, `verify_kappa_descent.py`, `verify_084473_derivation.py`.
+Supporting witnesses (no scored summary; inspect their output): `verify_boundary_green_function.py` (discrete 1/r, fit R² = 0.9966) and `verify_lemma_2p5_boundary_connectivity.py` (boundary graph 10-regular, connected, λ₂ = 1.77).
+
+## The Standard-Model / mass-sector suites (Paper LIX)
+
+| Suite | Checks | Verifies | Book chapters |
+|---|---|---|---|
+| `verify_sm_structure.py` | 12 | chirality structural (internal SU(2) = left Spin(4) factor); charge lattice Q = N/3 with the {1,3,3,1} pattern | Ch9, Ch12 |
+| `explore_shell_rule.py` | 11 | the shell-rule fence: curvature + affine obstructions (proof grade), corrected nulls, the W = Z + mixing identity, the scheme gradient | Ch8, Ch12 |
+| `explore_geometric_ladder.py` | 3 | Phase C: eight geometry-derived sieves all null after correction; the GL3 target recorded | Ch8, Ch12 |
+| `explore_offset_rationals.py` | 5 | Phase D: the primitive-rational offset correspondence (p = 0.002, control passed, mean corrected error 0.198%; post-sight, frozen alphabet) | Ch8, Ch12 |
+| `explore_mode_counting.py` | 8 | Phase E: the rule-derived alphabet (every Phase D denominator machine-enumerated, control primes not; re-score p = 0.003, 10/12; graph-only core variant p = 0.003); resonance sweep peaks at the 8 eigenfrequencies √λ, lit mode-space ranks = multiplicities; clock-stability census | Ch8, Ch12 |
 
 ## Data and environment
 

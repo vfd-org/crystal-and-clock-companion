@@ -38,13 +38,12 @@ MUST be read in conjunction with this LICENSE.
   | papers/** (tex, bib, pdf)            | CC BY-NC 4.0                   |
   | docs/** (derivations, ledgers)       | CC BY-NC 4.0                   |
   | reviews/** (referee reports)         | CC BY-NC 4.0                   |
-  | README.md                            | CC BY-NC 4.0                   |
-  | README.md                            | CC BY-NC 4.0                   |
-  | CHANGELOG.md                         | CC BY-NC 4.0                   |
+  | README.md, CHANGELOG.md              | CC BY-NC 4.0                   |
   +--------------------------------------+--------------------------------+
   | scripts/** (verification suites)     | PolyForm Noncommercial 1.0.0   |
   | scripts/600cell_data.npz             | PolyForm Noncommercial 1.0.0   |
   | run_all_verifications.sh             | PolyForm Noncommercial 1.0.0   |
+  | web/** (resonance explorer + module) | PolyForm Noncommercial 1.0.0   |
   +--------------------------------------+--------------------------------+
   | NOTICE                               | Public — must be preserved     |
   | LICENSE                              | Public — must be preserved     |
@@ -62,8 +61,8 @@ CC BY-NC 4.0 — applies to paper artefacts and documentation
 
 Copyright (c) 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
 
-The paper sources (hypersphere-universe.tex, hypersphere-universe.pdf,
-references.bib, SCOPE.md), the README.md, and the CHANGELOG.md are
+The papers (papers/**), the derivation and reference documents (docs/**),
+the referee reports (reviews/**), the README.md, and the CHANGELOG.md are
 licensed under the Creative Commons Attribution-NonCommercial 4.0
 International License (CC BY-NC 4.0):
 
@@ -93,13 +92,14 @@ For commercial licensing inquiries, contact:
     contact@vibrationalfielddynamics.org
 
 ================================================================================
-POLYFORM NONCOMMERCIAL 1.0.0 — applies to verify/ directory contents
+POLYFORM NONCOMMERCIAL 1.0.0 — applies to the verification scripts and data
 ================================================================================
 
 Copyright (c) 2026 Lee Smart and the Institute of Vibrational Field Dynamics.
 
-The verification scripts (verify/verify_paper.py, verify/README.md,
-verify/requirements.txt) are licensed under the PolyForm Noncommercial
+The verification scripts (scripts/**), the run-all driver
+(run_all_verifications.sh), the bundled data (scripts/600cell_data.npz),
+and the web explorer (web/**) are licensed under the PolyForm Noncommercial
 License 1.0.0:
 
     https://polyformproject.org/licenses/noncommercial/1.0.0/
@@ -114,7 +114,7 @@ Permitted uses include:
   - Academic peer review
   - Reproduction of paper claims (the primary intended use)
   - Teaching and educational settings
-  - Independent verification of the cascade Lambda-derivation
+  - Independent verification of the book's mathematical claims
   - Non-commercial derivative work with attribution
 
 Restricted uses (require separate written permission):
@@ -141,16 +141,17 @@ offering it as part of a paid service, using it to generate revenue
 directly or indirectly, or distributing it to clients of a commercial
 enterprise.
 
-"Verification use" means using verify/verify_paper.py to reproduce the
-numerical claims of the paper, study the cascade derivation, or evaluate
-the framework's reproducibility. This is the primary intended use and is
-permitted under PolyForm Noncommercial 1.0.0 without additional permission.
+"Verification use" means running the suites in scripts/ (via
+run_all_verifications.sh) to reproduce the numerical claims, study the
+derivations, or evaluate the framework's reproducibility. This is the
+primary intended use and is permitted under PolyForm Noncommercial 1.0.0
+without additional permission.
 
 "Research and educational use" means use by academics, students,
 independent researchers, or science communicators for the purpose of
 learning, teaching, criticism, or non-commercial publication. This is
-permitted under both CC BY-NC 4.0 (paper) and PolyForm Noncommercial
-1.0.0 (sim code) without additional permission.
+permitted under both CC BY-NC 4.0 (papers and docs) and PolyForm
+Noncommercial 1.0.0 (scripts) without additional permission.
 
 ================================================================================
 ATTRIBUTION REQUIREMENT
@@ -158,15 +159,14 @@ ATTRIBUTION REQUIREMENT
 
 Required citation format (see CITATION.cff for tooling):
 
-  Smart, Lee. "Hyperspherical Closure Cosmology: A phi-Cascade
-  Derivation of Lambda, and a Bridge to Closed FLRW, LambdaCDM,
-  Dodecahedral Topology, and Conformal Cyclic Cosmology." Institute
-  of Vibrational Field Dynamics, 2026.
-  https://github.com/vfd-org/hypersphere-cosmology
+  Smart, Lee. "The Crystal and the Clock: How a Single Shape Builds a
+  Universe from the Inside." Institute of Vibrational Field Dynamics,
+  2026.
+  https://github.com/vfd-org/crystal-and-clock-companion
 
-For derivative academic work, attribution to both this synthesis paper
-AND the underlying cascade-programme papers is encouraged where the
-underlying results are used (Paper V, XXII, XXXII, XXXVI; see NOTICE).
+For derivative academic work, attribution to the specific underlying
+paper is encouraged where its results are used (Papers XL, LIII-LIX;
+see NOTICE).
 
 ================================================================================
 COMMERCIAL LICENSING
